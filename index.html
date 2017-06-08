@@ -1,61 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Interface</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <style>
-        .interface__table {
-            font-size: 14px;
-        }
-        .interface__table>tbody>tr>th,
-        .interface__table>tbody>tr>td {
-            line-height: 1;
-            padding: 4px;
-            vertical-align: middle;
-            display: block;
-        }
-        .interface__table>tbody>tr>th:first-child,
-        .interface__table>tbody>tr>td:first-child {
-            display: table-cell;
-        }
-        .interface__table .col-narrow {
-            width: 1%;
-        }
-        .interface__table .table-inner {
-            display: block;
-            padding: 8px 0;
-        }
-        .interface__table .col-inner {
-            display: block;
-            margin-top: 8px;
-            padding: 0 8px;
-            line-height: 1;
-        }
-        .interface__table .col-inner:first-child {
-            margin-top: 0;
-        }
-        @media (min-width: 600px) {
-            .interface__table>tbody>tr>th,
-            .interface__table>tbody>tr>td {
-                display: table-cell;
-                height: 48px;
-            }
-        }
-        .interface__table .word-breaks {
-            display: inline-block;
-            max-width: 96px;
-            word-wrap: break-word;
-        }
-        .interface__table .btn {
-            height: 32px;
-            min-width: 64px;
-        }
-    </style>
+    <script src="/js/jquery_min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="interface.css">
 </head>
 <body>
-    <h1>Table</h1>
+<div class="interface">
+<div class="interface__content clearfix">
+<div class="validSuppliers container-fluid">
+    <h1 class="text-center">Valid Brand Suppliers Interface</h1>
     <table class="interface__table table table-striped">
         <tr>
             <th class="col-narrow">Supplier&nbsp;ID&nbsp;</th>
@@ -129,5 +87,26 @@
             </td>
         </tr>
     </table>
+</div>
+</div>
+<div class="interface__menu">
+    <a class="menuLink btn btn-default" href="/common/input_forms/interface.php">
+        <span class="menuLink__title">Home</span>
+    </a>
+    <a class="menuLink btn btn-default" href="/common/input_forms/interface.php?page=valid_suppliers">
+        <span class="menuLink__title">Valid brand suppliers</span>
+    </a>
+    <a class="menuLink btn btn-default" href="/common/input_forms/interface.php?page=customers_email_edit">
+        <span class="menuLink__title">Customers Email Editing</span>
+    </a>
+    <a class="menuLink btn btn-default" href="/common/input_forms/content_management.php">
+        <span class="menuLink__title">Content Management</span>
+    </a>
+    <a class="menuLink menuLink-labeled btn btn-default" href="../digital_ergonomics_workforce_client_3_0.php">
+        <span class="menuLink__title">Workforce Client</span>
+        <span class="menuLink__label">old</span>
+    </a>
+</div>
+</div>
 </body>
 </html>
